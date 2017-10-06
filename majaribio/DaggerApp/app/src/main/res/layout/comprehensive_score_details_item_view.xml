@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/score_details_item_padding_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/score_details_item_image"
+        android:tint="?brandAccent"/>
+
+    <com.gm.gemini.plugin_common_resources.ui.view.FontTextView
+        android:id="@+id/score_details_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/score_details_item_image"
+        android:paddingLeft="@dimen/info_block_padding"
+        android:textSize="@dimen/smart_driver_text"/>
+
+    <com.gm.gemini.plugin_common_resources.ui.view.FontTextView
+        android:id="@+id/score_details_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/info_block_padding"
+        android:textSize="@dimen/smart_driver_text"/>
+
+</merge>

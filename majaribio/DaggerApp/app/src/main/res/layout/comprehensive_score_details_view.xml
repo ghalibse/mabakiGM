@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/hard_brake_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.hard_brake_title"
+        app:score_details_view_image="@drawable/dynamic_icons_hard_brake" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/hard_acceleration_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.hard_acc_title"
+        app:score_details_view_image="@drawable/dynamic_icons_hard_acceleration" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/late_night_drive_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.late_night_drive_title"
+        app:score_details_view_image="@drawable/dynamic_icons_late_night_driving" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/total_miles_driven_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.dist_driven_title"
+        app:score_details_view_image="@drawable/dynamic_icons_distance_driven" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/average_fuel_economy_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.fuel_eco_title"
+        app:score_details_view_image="@drawable/dynamic_icons_fuel_economy" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/average_speed_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.avg_speed_title"
+        app:score_details_view_image="@drawable/dynamic_icons_average_speed" />
+
+    <com.gm.plugin.smart_driver.views.ComprehensiveScoreDetailsItemView
+        android:id="@+id/speed_over_item"
+        style="@style/ComprehensiveScoreDetailsItemViewStyle"
+        android:layout_width="match_parent"
+        app:score_details_view_label="@string/smart_driver.driving_activity.speed_over_title"
+        app:score_details_view_image="@drawable/dynamic_icons_speed_over_80mph" />
+
+    <com.gm.gemini.plugin_common_resources.ui.view.FontTextView
+        style="@style/ComprehensiveScoreDetailsMetricsDescription"
+        android:paddingTop="@dimen/score_details_item_padding_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="@string/smart_driver.driving_activity.metric_description"/>
+
+</LinearLayout>
